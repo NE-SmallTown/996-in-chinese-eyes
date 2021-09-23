@@ -81,7 +81,7 @@
 <script src="./swiper.js"></script>
 <script type="text/javascript">
   async function initSwiper() {
-    const images = await fetch('https://api.github.com/repos/NE-SmallTown/hisomething/contents/assets').then(res => res.json());
+    const images = await fetch('https://api.github.com/repos/NE-SmallTown/996-in-chinese-eyes/contents/assets').then(res => res.json());
     const swiperContainer = document.querySelector('.swiper-wrapper');
 
     images.forEach(file => {
