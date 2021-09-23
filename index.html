@@ -93,6 +93,8 @@
 
       swiperContainer.appendChild(imageElement);
     });
+      
+    images.sort((a, b) => Number(a.name.slice(0, a.name.indexOf('.'))) - Number(b.name.slice(0, b.name.indexOf('.'))));
 
     const swiper = new Swiper('.swiper-container', {
       loop: true,
